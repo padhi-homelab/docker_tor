@@ -1,6 +1,6 @@
 FROM padhihomelab/alpine-base:3.14.0_0.19.0_0.2
 
-ENV ENABLE_IPv6=1
+ENV AUTO_IPv6=0
 
 COPY 10-setup-volume.sh /etc/docker-entrypoint.d/
 COPY 20-update-ipv6.sh  /etc/docker-entrypoint.d/
